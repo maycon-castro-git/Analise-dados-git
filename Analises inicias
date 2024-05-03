@@ -1,0 +1,435 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/maycon-castro-git/Analise-dados-git/blob/main/Analises%20inicias\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "d9jDtUbDOE1-"
+      },
+      "source": [
+        "# **Tópicos**\n",
+        "\n",
+        "<ol type=\"1\">\n",
+        "  <li>Introdução ao Google Colab;</li>\n",
+        "  <li>Variáveis;</li>\n",
+        "  <li>Números;</li>\n",
+        "  <li><i>Strings;</i></li>\n",
+        "  <li>Boleanos.</li>\n",
+        "</ol>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SmoHgt-lwkpD"
+      },
+      "source": [
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "GABI6OW8OfQ2"
+      },
+      "source": [
+        "# **Exercícios**"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "muD1vxozykSC"
+      },
+      "source": [
+        "## 1\\. Google Colab"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ahrFfCuBxJKs"
+      },
+      "source": [
+        "Crie uma célula de código que escreva o texto \"Olá mundo!\", utilize o comando `print`."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KI9zQRT2xa7m"
+      },
+      "source": [
+        "Crie uma célua de texto e adicione uma imagem."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Olá Mundo!\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "okSqEtoSihGE",
+        "outputId": "0665f6f4-b70d-45b6-9c6b-08c1eb70315e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá Mundo!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zMN1Q3jdwoJm"
+      },
+      "source": [
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tFYOPLS3xiwe"
+      },
+      "source": [
+        "## 2\\. Números"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "O2G9gt7tx2c-"
+      },
+      "source": [
+        "Preencha as células de código para preencher os valores de (A), (B) e (C) na tabela de ticket médio abaixo:\n",
+        "\n",
+        "<br>\n",
+        "\n",
+        "| Dia   | Valor Total Vendas | Qtd Total Vendas | Ticket Medio |\n",
+        "|-------|--------------------|------------------|--------------|\n",
+        "| 19/01 | 961.56             | 3                | 320.52       |\n",
+        "| 20/01 | 834.47             | 7                | 119.21       |\n",
+        "| 23/01 | 15378.12           | 5                | 3075.62      |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nsrKH9EizNRD",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "87d4c129-3459-42e9-d3d7-235b01421207"
+      },
+      "source": [
+        "# (A)\n",
+        "qtd_vendas_19 = 3\n",
+        "ticket_medio_19 = 320.52\n",
+        "valor_total_vendas_19 = qtd_vendas_19 * ticket_medio_19\n",
+        "print(valor_total_vendas_19)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "961.56\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QQ1GBGHJzMmi",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4e97311a-d3e6-4e51-8b41-d8aeaa593b90"
+      },
+      "source": [
+        "# (B)\n",
+        "valor_total_vendas_20 = 834.47\n",
+        "ticket_medio_20 = 119.21\n",
+        "qtd_total_20 = valor_total_vendas_20 / ticket_medio_20\n",
+        "print(qtd_total_20)\n"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7.000000000000001\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "W-li0nSMzKNa",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f3b6c46b-5cc6-411b-9877-f4c22f1061c9"
+      },
+      "source": [
+        "# (C)\n",
+        "valor_total_vendas_23 = 15378.12\n",
+        "qtd_total_23 = 5\n",
+        "ticket_medio_23 = valor_total_vendas_23 / qtd_total_23\n",
+        "print(ticket_medio_23)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3075.6240000000003\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3eoP-Vj9yzh8"
+      },
+      "source": [
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yUJ6kdony6Pr"
+      },
+      "source": [
+        "## 3\\. Strings"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KDuZpg-5zCvO"
+      },
+      "source": [
+        "Aplique três métodos distintos na *string* abaixo:"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "k9zbyf7BzjKj"
+      },
+      "source": [
+        "cancao = 'Roda mundo, roda gigante, roda moinho, roda pião.'"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Aplicando o método upper()\n",
+        "cancao_upper = cancao.upper()\n",
+        "print(cancao_upper)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aRy8g1kRVMPm",
+        "outputId": "613df06c-37cb-488e-a294-0e6f4b4ddadc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "RODA MUNDO, RODA GIGANTE, RODA MOINHO, RODA PIÃO.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Aplicando o método replace()\n",
+        "cancao_replace = cancao.replace('roda', 'gira')\n",
+        "print(cancao_replace)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vKgcvP0QVfos",
+        "outputId": "c8c5022a-3c5c-4f58-bafb-d0a388dc66b8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Roda mundo, gira gigante, gira moinho, gira pião.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Aplicando o método split()\n",
+        "cancao_split = cancao.split(', ')\n",
+        "print(cancao_split)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7O_6V3BLV4ts",
+        "outputId": "abe49821-19af-42c9-9b30-b39c85357e19"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Roda mundo', 'roda gigante', 'roda moinho', 'roda pião.']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "guZMHXVq0FnC"
+      },
+      "source": [
+        "Extraia da string abaixo o valor da taxa **selic** na variável `selic` e o valor do **ano** na variavel `ano`. Imprima os valores na tela."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cbx_P4IQ0agK",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "c8f5943a-f131-4420-c5ae-b090cae06808"
+      },
+      "source": [
+        "noticia = 'Selic vai a 2,75% e supera expectativas; é a primeira alta em 6 anos.'\n",
+        "\n",
+        "# Extraindo a taxa Selic\n",
+        "selic = noticia.split(' ')[3]\n",
+        "print('Taxa Selic:', selic)\n",
+        "\n",
+        "# Extraindo o ano\n",
+        "ano = noticia.split(' ')[-2]\n",
+        "print('Ano:', ano)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Taxa Selic: 2,75%\n",
+            "Ano: 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wWzbu-OC0z3L"
+      },
+      "source": [
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "no8w_Ati01xP"
+      },
+      "source": [
+        "## 4\\. Booleanos"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "D_0tC3SC099N"
+      },
+      "source": [
+        "Utilize a tabela da verdade para responder: qual o valor da variável x?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XwIEbxf91SpU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "40ea2a66-a0f2-4a29-f1d6-12f3543bc7f7"
+      },
+      "source": [
+        "a = False\n",
+        "b = True\n",
+        "\n",
+        "x = not a & b\n",
+        "print(x)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
